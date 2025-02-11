@@ -1,5 +1,10 @@
-# PL2025-A104345
+![Logo UM](UM.png)
 
-* Tomás Oliveira  - A104345
+# Processamento de Linguagens - PL2025-A104345
 
-  Este repositório reúne os trabalhos de casa da disciplina de Processamento de Linguagens.
+- Nome: Tomás Afonso Brito Oliveira
+- Nº: A104345
+
+![Foto do aluno](foto.jpg)
+
+Este repositório reúne os trabalhos de casa da disciplina de Processamento de Linguagens.
