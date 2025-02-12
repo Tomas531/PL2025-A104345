@@ -11,3 +11,6 @@ Este programa implementa a função `soma`, que processa uma string contendo car
 5. Sempre que o caractere `=` é encontrado, a função imprime o valor acumulado até esse momento.
 6. O processo continua até o fim da string.
 
+
+2/11/2025
+Tomás Oliveira
