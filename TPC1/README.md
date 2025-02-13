@@ -5,7 +5,7 @@
 - **Data**: 2/11/2025
 
 <p align="center">
-  <img src="foto.jpg" alt="Foto do aluno" style="width: 20%;">
+  <img src="../foto.jpg" alt="Foto do aluno" style="width: 20%;">
 </p>
 
 
