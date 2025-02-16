@@ -3,20 +3,21 @@ import re
 def tpc2():
     with open('obras.csv', 'r', encoding='utf-8') as file:
         next(file)
-        registros = []
         conteudo = file.read()
-        # Padrao que separa cada campo do csv
+
+        #Padrão que retira cada campo. Nota-se que foi necessário acrescentar as aspas ao campo 2 pois as descrições têm ";"
+        #nome;desc;anoCriacao;periodo;compositor;duracao;_id
         padrao = r'([^;]+);("[^;]+");([0-9][^;]+);([^;]+);([^;]+);([^;]+);([^;]+)\n'
 
         campos = re.findall(padrao, conteudo) 
 
-        compositores = set()
-        dis_obras = {}
-        periodo_obras = {}
+        compositores = set() # Set para o nome dos Compositores
+        dis_obras = {} # Dicionário para as distribuições das obras pelos periudos
+        periodo_obras = {} # Dicionário para guardar as obras de cada periudo
 
         for elementos in campos:
             if len(elementos) > 6:
-                compositores.add(elementos[4])
+                compositores.add(elementos[4]) 
 
                 periodo = elementos[3] 
                 obra = elementos[0]
