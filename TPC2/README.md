@@ -22,8 +22,8 @@ Este projeto tem como objetivo processar um dataset de obras musicais armazenado
    - O conteúdo restante é lido e armazenado em uma string.
 
 2. **Processamento dos Dados**
-   - Utiliza-se uma expressão regular ([`regex`](./tpc2.py)) para extrair os campos do CSV.
-   - Um conjunto ([`set`](./tpc2.py)) é utilizado para armazenar os compositores sem repetições.
+   - Utiliza-se uma expressão regular (`regex`) para extrair os campos do CSV.
+   - Um conjunto (`set`) é utilizado para armazenar os compositores sem repetições.
    - Dois dicionários são criados:
      - [`dis_obras`](./tpc2.py): Contagem de obras por período.
      - [`periodo_obras`](./tpc2.py): Lista das obras associadas a cada período.
