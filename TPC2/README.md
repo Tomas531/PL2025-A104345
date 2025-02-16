@@ -9,7 +9,7 @@
 </p>
 
 ## Descrição
-Este projeto tem como objetivo processar um dataset de obras musicais armazenado no arquivo [`obras.csv`](./obras.csv), sem utilizar o módulo `csv` do Python. O código realiza a leitura, extração e organização dos dados para gerar os seguintes resultados:
+Este projeto tem como objetivo processar um dataset de obras musicais armazenado no arquivo [`obras.csv`](./obras.csv), sem utilizar o módulo `csv` do Python. O [código](./tpc2.py) realiza a leitura, extração e organização dos dados para gerar os seguintes resultados:
 
 1. **Lista ordenada alfabeticamente dos compositores musicais.**
 2. **Distribuição das obras por período**, ou seja, quantas obras estão catalogadas em cada período.
@@ -22,11 +22,11 @@ Este projeto tem como objetivo processar um dataset de obras musicais armazenado
    - O conteúdo restante é lido e armazenado em uma string.
 
 2. **Processamento dos Dados**
-   - Utiliza-se uma expressão regular (`regex`)(./tpc2.py) para extrair os campos do CSV.
-   - Um conjunto (`set`)(./tpc2.py) é utilizado para armazenar os compositores sem repetições.
+   - Utiliza-se uma expressão regular ([`regex`](./tpc2.py)) para extrair os campos do CSV.
+   - Um conjunto ([`set`](./tpc2.py)) é utilizado para armazenar os compositores sem repetições.
    - Dois dicionários são criados:
-     - `dis_obras`(./tpc2.py): Contagem de obras por período.
-     - `periodo_obras`(./tpc2.py): Lista das obras associadas a cada período.
+     - [`dis_obras`](./tpc2.py): Contagem de obras por período.
+     - [`periodo_obras`](./tpc2.py): Lista das obras associadas a cada período.
 
 3. **Ordenação e Impressão dos Resultados**
    - Os compositores são ordenados alfabeticamente.
