@@ -4,11 +4,10 @@ def tpc2():
     with open('obras.csv', 'r', encoding='utf-8') as file:
         next(file)
         conteudo = file.read()
+        conteudo = re.sub("\n         ", " ", conteudo)
+        conteudo += "\n"
 
-        #Padrão que retira cada campo. Nota-se que foi necessário acrescentar as aspas ao campo 2 pois as descrições têm ";"
-        #nome;desc;anoCriacao;periodo;compositor;duracao;_id
-        padrao = r'([^;]+);("[^;]+");([0-9][^;]+);([^;]+);([^;]+);([^;]+);([^;]+)\n'
-
+        padrao = r'([^;]+);([^\n]+);([^;]+);([^;]+);([^;]+);([^;]+);([^;]+)\n'
         campos = re.findall(padrao, conteudo) 
 
         compositores = set() # Set para o nome dos Compositores
@@ -29,17 +28,16 @@ def tpc2():
                     dis_obras[periodo] = 1
                     periodo_obras[periodo] = [obra]
         compositores = sorted(compositores)
-
             
         print("Compositores Musicais (ordenados alfabeticamente):")
         for compositor in compositores:
             print(f"- {compositor}")
         
         print("\n\n")
-
+        
         print("Distribuição das obras por período:")
         for periodo, quantidade in dis_obras.items():
-            print(f"{periodo}: {quantidade} obra(s)")
+            print(f"{periodo}: {quantidade} obras")
 
         print("\n\n")
 

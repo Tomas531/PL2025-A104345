@@ -2,7 +2,7 @@
 
 - **Nome**: Tomás Afonso Brito Oliveira  
 - **Nº**: A104345  
-- **Data**: 2/11/2025
+- **Data**: 11/2/2025
 
 <p align="center">
   <img src="../foto.jpg" alt="Foto do aluno" style="width: 20%;">
