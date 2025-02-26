@@ -18,11 +18,12 @@ def coversor_mk_to_html(text):
     
     text = re.sub(r"^[2-9].(.+)$",r"<li>\1</li>\n</ol>",text, flags=re.MULTILINE)    
 
-    text = re.sub(r"</li>\n</ol></li>",r"<li>\n</li>",text, flags=re.MULTILINE)    
+    text = re.sub(r"</li>\n</ol>\n<li>",r"</li>\n<li>",text, flags=re.MULTILINE)    
     
-    text = re.sub(r"\[([^\[]+)\]\(([^(]+)\)",r"<a href=\"\2\">\1</a>",text)    
     
     text = re.sub(r"!\[([^\[]+)\]\(([^\)]+)\)", r'<img src="\2" alt="\1">', text)
+
+    text = re.sub(r"\[([^\[]+)\]\(([^(]+)\)",r'<a href="\2">\1</a>',text)    
 
     return text
 
