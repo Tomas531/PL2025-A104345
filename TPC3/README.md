@@ -23,7 +23,7 @@ Neste [código](./tpc3.py) passamos por cada caso pedido em `markdown` e usando 
 Execute o ficheiro [`tpc3.py`](./tpc3.py) com o nome do ficheiro teste em `markdown`, [`teste.md`](./teste.md) como primeiro argumento e o nome do ficheiro html que o programa criara como segundo argumento.
 
 ```sh
-python3 tcp3.py teste.md saida.html
+python3 tpc3.py teste.md saida.html
 ```
 
 Isso converterá o arquivo `teste.md` para `saida.html`.
