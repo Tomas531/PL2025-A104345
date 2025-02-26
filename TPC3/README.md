@@ -30,7 +30,7 @@ Isso converterá o arquivo `teste.md` para `saida.html`.
 
 ## Exemplo de Entrada e Saída
 
-### Entrada (`exemplo.md`):
+### Entrada (`teste.md`):
 ```
 # Título Principal
 ## Subtítulo
