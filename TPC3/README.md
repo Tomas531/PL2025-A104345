@@ -9,7 +9,7 @@
 </p>
 
 ## Descrição
-Neste [código][./tpc3.py] passamos por cada caso pedido em `markdown` e usando a biblioteca `regex` substituimos um de cada vez pelo seu equivalente em `html`. Estes são as substituições:
+Neste [código](./tpc3.py) passamos por cada caso pedido em `markdown` e usando a biblioteca `regex` substituimos um de cada vez pelo seu equivalente em `html`. Estes são as substituições:
 
 - **Cabeçalhos**: `# Texto`, `## Texto`, `### Texto`
 - **Negrito**: `**Texto**`
@@ -54,7 +54,7 @@ Aqui uma imagem: ![Exemplo](https://www.exemplo.com/imagem.jpg)
 <h2> Subtítulo</h2>
 <h3> Subsubtítulo</h3>
 
-Este é um <b>exemplo</b> de texto em negrito.
+Este é um <i>exemplo</i> de texto em negrito.
 Este é um <b>exemplo</b> de texto em itálico.
 
 <ol>
@@ -65,7 +65,7 @@ Este é um <b>exemplo</b> de texto em itálico.
 
 Veja mais em <a href="https://www.google.com">Google</a>.
 
-Aqui uma imagem: <img src="https://www.exemplo.com/imagem.jpg" alt="Exemplo">
+Aqui está uma imagem: <img src="https://www.exemplo.com/imagem.jpg" alt="Exemplo">
 ```
 
 
