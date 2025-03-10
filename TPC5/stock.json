@@ -1,7 +1,7 @@
 [
     {
         "cod": "A23",
-        "nome": "\u00c3\u00a1gua 0.5L",
+        "nome": "agua 0.5L",
         "quant": 6,
         "preco": 0.7
     },
@@ -14,7 +14,7 @@
     {
         "cod": "C67",
         "nome": "bolacha",
-        "quant": 0,
+        "quant": 3,
         "preco": 0.5
     }
 ]
