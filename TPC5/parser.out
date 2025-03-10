@@ -1,0 +1,88 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> comando
+Rule 1     comando -> LISTAR
+Rule 2     comando -> MOEDA MOEDAS
+Rule 3     comando -> SELECIONAR CODIGO
+Rule 4     comando -> SAIR
+
+Terminals, with rules where they appear
+
+CODIGO               : 3
+LISTAR               : 1
+MOEDA                : 2
+MOEDAS               : 2
+SAIR                 : 4
+SELECIONAR           : 3
+error                : 
+
+Nonterminals, with rules where they appear
+
+comando              : 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . comando
+    (1) comando -> . LISTAR
+    (2) comando -> . MOEDA MOEDAS
+    (3) comando -> . SELECIONAR CODIGO
+    (4) comando -> . SAIR
+
+    LISTAR          shift and go to state 2
+    MOEDA           shift and go to state 3
+    SELECIONAR      shift and go to state 4
+    SAIR            shift and go to state 5
+
+    comando                        shift and go to state 1
+
+state 1
+
+    (0) S' -> comando .
+
+
+
+state 2
+
+    (1) comando -> LISTAR .
+
+    $end            reduce using rule 1 (comando -> LISTAR .)
+
+
+state 3
+
+    (2) comando -> MOEDA . MOEDAS
+
+    MOEDAS          shift and go to state 6
+
+
+state 4
+
+    (3) comando -> SELECIONAR . CODIGO
+
+    CODIGO          shift and go to state 7
+
+
+state 5
+
+    (4) comando -> SAIR .
+
+    $end            reduce using rule 4 (comando -> SAIR .)
+
+
+state 6
+
+    (2) comando -> MOEDA MOEDAS .
+
+    $end            reduce using rule 2 (comando -> MOEDA MOEDAS .)
+
+
+state 7
+
+    (3) comando -> SELECIONAR CODIGO .
+
+    $end            reduce using rule 3 (comando -> SELECIONAR CODIGO .)
+
